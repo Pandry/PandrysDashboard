@@ -1,0 +1,197 @@
+:root {
+/*
+JS change var:
+
+document.documentElement.style.setProperty(`--var`, value;
+*/
+    /*Main*/
+  --main-title-color:#c9c9c9;
+  --text-color: #c9c9c9;
+  --body-background-color: #004060;
+
+  /* Panels */
+
+    /* Header */
+  --pa-h-head-bg-color:#002030;/*Header Background Color*/
+  --pa-h-button-min-bg-color:#005070;/*Minimize button backgroud color*/
+  --pa-h-button-min-color:white;/*Minimize button color*/
+  --pa-h-title-color:#c9c9c9;/*Header text color*/
+
+        /* Body */
+    --pa-b-border-color:#002030 solid 2px;/*Body border*/
+    --pa-b-bg-color:#052835;/*Body background color*/
+
+            /* Graphs Settings */
+        /* CPU */
+
+        /* RAM */
+        /*
+        --gr-ram-xlg-cached-mem-color: rgba(0,0,0,0.2);
+        --gr-ram-xlg-userused-mem-color: rgba(0,0,0,0.2);
+        --gr-ram-xlg-buffered-mem-color: rgba(0,0,0,0.2);
+        */
+    --gr-ram-xlg-userused-mem-color: rgba(31, 231, 61, 0.25);/*Used ram mermory bar color*/
+    --gr-ram-xlg-buffered-mem-color: rgba(30, 72, 143, 0.60);/*Cached ram mermory bar color*/
+    --gr-ram-xlg-cached-mem-color: rgba(211, 191, 0, 0.30);/*Free ram mermory bar color*/
+    
+    --gr-ram-xlg-pin-color: #e5ed02;/*Ram Pin color*/
+    --gr-ram-xlg-surface-color: #007434;/*Ram Pin color*/
+    --gr-ram-xlg-surface-stroke-color: #003410;/*Ram Pin color*/
+    --gr-ram-xlg-driver-color: #004020;/*Ram memory driver color*/
+    --gr-ram-xlg-text-color: #bfbfbf;/*Ram Percentage Text color*/
+
+
+}
+
+.gr-ram-xlg-text{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    fill: var(--gr-ram-xlg-text-color);
+}
+
+.gr-ram-xlg-pin{
+    stroke:var(--gr-ram-xlg-pin-color);
+}
+
+.gr-ram-xlg-cachedmem{
+    fill:var(--gr-ram-xlg-cached-mem-color);
+}
+
+.gr-ram-xlg-userusedmem{
+    fill:var(--gr-ram-xlg-userused-mem-color);
+}
+
+.gr-ram-xlg-bufferedmem{
+    fill:var(--gr-ram-xlg-buffered-mem-color);
+}
+
+.gr-ram-xlg-driver{
+    fill:var(--gr-ram-xlg-driver-color);
+}
+
+.gr-ram-xlg-surface{
+    fill:var(--gr-ram-xlg-surface-color);
+    stroke: var(--gr-ram-xlg-surface-stroke-color);
+}
+
+.main-title{
+    margin-top: 10px;
+    text-align: center;
+    color: var(--main-title-color);
+    padding-bottom:5px;
+}
+
+.main-title:after{
+    content:' ';
+    margin-top: 6px;
+    margin-right: 30%;
+    margin-left: 30%;
+    display:block;
+    border: solid;
+    border-color: var(--main-title-color);
+    border-radius:100px;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    border-width: thin;
+}
+
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    color: var(--main-title-color);
+}
+
+body{
+    background-color: var(--body-background-color);
+}
+
+#header{
+    margin-bottom: 40px;
+}
+
+.containerTopbar{
+    height:35px;
+    width: auto;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text-color);
+}
+
+.panel-title{
+    width: 100%;
+}
+
+.panel-heading{
+    display: block;
+    background: var(--pa-h-head-bg-color);
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.panel-text{
+    margin-left: 4%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.panel-min-button {
+    margin-right: 15px;
+    margin-top: 8px;
+    float: right;
+    background-color: var(--pa-h-button-min-bg-color);
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: var(--pa-h-button-min-color);
+}
+
+.panel-body{
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: var(--pa-b-border-color);
+    background: var(--pa-b-bg-color);
+}
+
+.panel{
+    margin: 15px 0;
+    width: 100%;
+    display: inline-block;
+}
+
+ .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px 0;
+
+ }
+
+
+.panel-body-content{
+    
+    margin-left: 3%;
+    right: auto;
+    word-wrap:break-word;
+    width: 94%;
+}
+
+.progressbar-text{
+    top:60px !important;/*Text graph*/
+}
+
+
+.panel-body-content:first-child{
+    
+}
+
+#CPUTable {
+    min-height: 88%;
+}
