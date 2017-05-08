@@ -390,13 +390,13 @@ Inactive:        63792 kB
                     <div class="col-lg-12">
                         <div class="panel-heading">
                             <div class="panel-title">
-                                <a href="#" data-toggle="collapse" data-target="#RAMTable">
+                                <a href="#" data-toggle="collapse" data-target="#CPUExtGraph">
                                     <i class="panel-min-button fa fa-minus"></i>
                                 </a>
                                 <p class="panel-text">CPU Load Graph</p>
                             </div>
                         </div>
-                        <div class="panel-body collapse show" id="RAMTable">
+                        <div class="panel-body collapse show" id="CPUExtGraph">
                             <div class="panel-body-content">
                                 <p>Cool Graph man!!
                                 </p>
