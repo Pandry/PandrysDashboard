@@ -1,5 +1,5 @@
 # PandrysDashboard
-My dashboad, coded from scrath (with Bootstrap) and abandoned to itself 'cause I started to get bored
+My dashboad, coded from scratch (with Bootstrap) and abandoned to itself 'cause I started to get bored
 
 
 # Screenshot
