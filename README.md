@@ -2,5 +2,5 @@
 My dashboad, coded from scrath (with Bootstrap) and abandoned to itself 'cause I started to get bored
 
 
-# Screenshots
+# Screenshot
 ![The dashboard](http://i.imgur.com/OOFt7OR.png)
